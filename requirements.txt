@@ -1,0 +1,9 @@
+# torch
+transformers
+# pandas
+# numpy
+matplotlib
+# json
+requests
+flask
+yfinance

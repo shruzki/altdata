@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis for Stock</h1>
+    <form method="POST">
+        <label for="ticker">Enter Ticker Symbol:</label>
+        <input type="text" name="ticker" id="ticker" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if plot_img %}
+    <h2>Sentiment Score vs. Stock Price for {{ ticker }}</h2>
+    <img src="data:image/png;base64,{{ plot_img.read()|b64encode }}" alt="Sentiment vs. Stock Price">
+    <a href="/download_csv/{{ ticker }}" download="sentiment_data.csv">Download Sentiment Data CSV</a>
+    {% endif %}
+</body>
+</html>
