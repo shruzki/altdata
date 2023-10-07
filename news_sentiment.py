@@ -22,7 +22,7 @@ import numpy as np
 # querystring = {"symbol":"AAPL"}
 
 # headers = {
-# 	"X-RapidAPI-Key": "f99a086b8bmsh015f02cd5380287p1d650djsn332441cedc2c",
+# 	"X-RapidAPI-Key": "",
 # 	"X-RapidAPI-Host": "mboum-finance.p.rapidapi.com"
 # }
 
